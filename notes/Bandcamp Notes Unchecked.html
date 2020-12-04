@@ -1,0 +1,2445 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>Bandcamp Notes Unchecked</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+@import '';
+
+/*by H16nning*/
+
+:root {
+  --bg-color: #242932;
+  --side-bar-bg-color: #29303c;
+  --control-text-color: #e6ecf1;
+  --primary-color: rgb(56, 132, 255);
+  --primary-btn-border-color: #3884ff;
+  --active-file-bg-color: #5d6574;
+  --active-file-text-color: inherit;
+  --active-file-border-color: #3884ff;
+  --item-hover-text-color: #8092af;
+  --item-hover-bg-color: #29303c;
+  --window-border: 1px solid #5d6574;
+  --select-text-font-color: #e6ecf1;
+  --select-text-bg-color: #3277e5;
+
+  --md-char-color: #8092af;
+  --heading-char-color: #8092af;
+  --meta-content-color: #3783ff;
+
+  --borders: #353c49;
+  --table-border-color: #353c49;
+  --boxes: #29303c;
+  --boxes-darker: #424b5a;
+  --boxes-darker2: #485364;
+  --boxes-darkest: #5b697e;
+  --drag-placeholder-color: #424b5a;
+
+  --mds: #183055;
+  --text-color: #e6ecf1;
+  --heading-text-color: white;
+  --light-text-color: #5b697e;
+  --light-text-color-brighter: #768292;
+  --codeboxes: white;
+  --rawblock-edit-panel-bd: transparent;
+
+  --primary-color-white: #5272a7;
+  --primary-color-white-darker: #5a83c5;
+  --primary-color-darker: #1f65d6;
+  --focus-ring-color: #3783ff;
+
+  --danger-color: rgb(255, 70, 66);
+
+  --node-fill: #5252ad;
+  --node-border: #3f3fb8;
+  --cluster-fill: #ffffde;
+  --cluster-border: #aaaa33;
+  --note-fill: #fff5ad;
+  --note-border: #aaaa33;
+
+  /*****************************/
+
+  --font-family: 'Roboto', sans-serif;
+  --code-font-family: 'Source Code Pro';
+  --monospace: 'Source Code Pro';
+}
+
+html,
+.form-control,
+.modal {
+  font-size: 16px;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: white;
+  line-height: 1.625rem;
+  height: 100%;
+}
+
+#write {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 100px;
+  position: static;
+  width: 100%;
+}
+
+#write > ul:first-child,
+#write > ol:first-child {
+  margin-top: 30px;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none !important;
+  transition-duration: 0.2s;
+  transition-property: color;
+}
+
+a:hover {
+  color: var(--primary-color-darker);
+}
+
+.ty-preferences a {
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  color: var(--heading-text-color);
+  cursor: text;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+  text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+  font-size: inherit;
+}
+
+h2 tt,
+h2 code {
+  font-size: inherit;
+}
+
+h3 tt,
+h3 code {
+  font-size: inherit;
+}
+
+h4 tt,
+h4 code {
+  font-size: inherit;
+}
+
+h5 tt,
+h5 code {
+  font-size: inherit;
+}
+
+h6 tt,
+h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: solid 2px var(--borders);
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+#write > h1.md-focus:before,
+#write > h2.md-focus:before,
+#write > h3.md-focus:before,
+#write > h4.md-focus:before,
+#write > h5.md-focus:before,
+#write > h6.md-focus:before {
+  color: var(--light-text-color);
+  border: none;
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0px;
+  line-height: 1;
+}
+
+#write > h1.md-focus:before {
+  content: 'h1';
+  top: 1.25rem;
+  left: -1.75rem;
+}
+
+#write > h2.md-focus:before {
+  content: 'h2';
+  top: 0.8rem;
+  left: -1.75rem;
+}
+
+#write > h3.md-focus:before {
+  content: 'h3';
+  top: 0.55rem;
+  left: -1.75rem;
+}
+
+#write > h4.md-focus:before {
+  content: 'h4';
+  top: 0.35rem;
+  left: -1.75rem;
+}
+
+#write > h5.md-focus:before {
+  content: 'h5';
+  top: 0.2rem;
+  left: -1.75rem;
+}
+
+#write > h6.md-focus:before {
+  content: 'h6';
+  top: 0.2rem;
+  left: -1.75rem;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+blockquote h1,
+blockquote h2,
+blockquote h3,
+blockquote h4,
+blockquote h5,
+blockquote h6 {
+  margin-top: 0rem;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl {
+  margin: 0.5rem 0rem 1.5rem 0rem;
+}
+
+li > ol,
+li > ul {
+  margin: 0 0;
+}
+
+hr {
+  height: 2px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: var(--borders);
+  border: 0 none;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+
+li p.first {
+  display: inline-block;
+}
+
+ul,
+ol {
+  padding-left: 30px;
+}
+
+ul:first-child,
+ol:first-child {
+  margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+  margin-bottom: 0;
+}
+
+.md-blockmeta {
+  color: var(--md-char-color);
+}
+
+mark {
+  background-color: rgb(56, 132, 255, 0.4);
+  color: var(--text-color);
+}
+
+/*BLOCKQUOTE*/
+
+blockquote {
+  width: 100%;
+  background-color: var(--boxes);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 0.3em;
+  padding: 1rem;
+}
+
+blockquote blockquote {
+  padding-right: 0;
+}
+
+table {
+  font-size: 0.875rem;
+  padding: 0;
+  margin: 1.5rem 0;
+  word-break: initial;
+}
+
+/*TABLE*/
+
+table tr {
+  border-top: 1px solid var(--borders);
+  border-bottom: 1px solid var(--borders);
+  margin: 0;
+  padding: 0;
+}
+
+table tr.md-end-block {
+  border-top: none;
+}
+
+table tr th {
+  font-weight: bold;
+  border: none;
+  border-bottom: solid 2px var(--borders);
+  margin: 0;
+  padding: 10px 16px;
+  transition-duration: 0.1s;
+  transition-property: background-color;
+}
+
+table tr td {
+  border: none;
+  margin: 0;
+  padding: 10px 16px;
+  transition-duration: 0.1s;
+  transition-property: background-color;
+}
+
+#write table tr td:hover,
+#write table tr th:hover {
+  background-color: var(--boxes);
+}
+
+table tr th:first-child,
+table tr td:first-child {
+  margin-top: 0;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+  margin-bottom: 0;
+}
+
+/*OTHER TABLE THINGS*/
+
+.ty-table-edit {
+  padding: 0.3rem;
+  border: solid 1px var(--borders);
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+}
+
+.ty-table-edit:active,
+.ty-table-edit:focus,
+.popover:active,
+.popover:focus {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+}
+
+.popover {
+  border: solid 1px var(--borders);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+  border-radius: 0.3rem;
+}
+
+.popover .arrow {
+  border-bottom-color: var(--borders);
+}
+
+.md-grid-board .md-grid-ext {
+  background-color: var(--boxes);
+}
+
+.md-grid-board tr[row='1'] .md-grid-ext {
+  background-color: var(--boxes-darkest);
+}
+
+.md-grid-board a.md-active,
+.md-grid-board a:hover {
+  background-color: var(--primary-color-white);
+  border-color: var(--primary-color-white-darker);
+}
+
+#md-grid-width,
+#md-grid-height {
+  border-radius: 0.3rem;
+  border-color: var(--borders);
+  transition-duration: 0.3s;
+  transition-property: border-color;
+}
+
+#md-grid-width:focus,
+#md-grid-height:focus {
+  border-radius: 0.3rem;
+  border-color: var(--primary-color);
+}
+
+/*CODE*/
+
+.CodeMirror {
+  padding: 1rem;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.cm-s-inner .CodeMirror-gutters {
+  background-color: none;
+  border-right: none;
+  border-radius: 0px;
+  width: 2rem;
+  color: white;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.cm-s-inner .CodeMirror-gutter-wrapper {
+  left: -2.75rem !important;
+}
+
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+  border-left: solid 2px var(--light-text-color-brighter);
+}
+
+.CodeMirror.cm-s-typora-default .CodeMirror-activeline-background {
+  background-color: var(--boxes);
+}
+
+.cm-s-inner .CodeMirror-cursor {
+  color: white;
+  border-left: solid 1px white;
+}
+
+.cm-s-inner .CodeMirror-linenumber {
+  color: white;
+  opacity: 0.6;
+  width: 1.9532rem !important /*required*/;
+}
+
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line > span::selection,
+.cm-s-inner .CodeMirror-line > span::-moz-selection,
+.cm-s-inner .CodeMirror-line > span > span::selection,
+.cm-s-inner .CodeMirror-line > span > span::-moz-selection {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-inner span.cm-comment {
+  color: #9daab6;
+}
+
+.cm-s-inner span.cm-string,
+.cm-s-inner span.cm-string-2 {
+  color: #71a7ff;
+}
+
+.cm-s-inner span.cm-number {
+  color: #ff9d3d;
+}
+
+.cm-s-inner span.cm-variable,
+.cm-s-inner span.cm-variable-2 {
+  color: white;
+}
+
+.cm-s-inner span.cm-def {
+  color: white;
+}
+
+.cm-s-inner span.cm-operator {
+  color: #ff9d3d;
+}
+
+.cm-s-inner span.cm-keyword {
+  color: #61e3a5;
+}
+
+.cm-s-inner span.cm-atom {
+  color: #bd93f9;
+}
+
+.cm-s-inner span.cm-meta {
+  color: #f8f8f2;
+}
+
+.cm-s-inner span.cm-link {
+  color: var(--primary-color);
+}
+
+.cm-s-inner span.cm-tag,
+.cm-s-inner .cm-header {
+  color: #b4f6d6;
+}
+
+.cm-s-inner span.cm-attribute {
+  color: #ff9d3d;
+}
+
+.cm-s-inner span.cm-qualifier,
+.cm-s-inner span.cm-type,
+.cm-s-inner span.cm-variable-3 {
+  color: #82ee9d;
+}
+
+.cm-s-inner span.cm-property {
+  color: #ffd6ad;
+}
+
+.cm-s-inner span.cm-builtin {
+  color: #8ffaaa;
+}
+
+.md-fences.md-focus .cm-s-inner .CodeMirror-activeline-background {
+  background: none;
+}
+
+.cm-s-inner .CodeMirror-selected,
+.cm-s-inner .CodeMirror-selectedtext {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-typora-default .cm-header,
+.cm-s-typora-default .cm-property {
+  color: var(--primary-color);
+}
+
+#typora-source span.cm-variable {
+  color: var(--window-border);
+}
+
+#write .code-tooltip {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+  border: solid 1px var(--borders);
+  border-radius: 0.3rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  width: 15rem;
+  height: 2.5rem;
+  bottom: -3rem;
+  padding: 0.1875rem;
+}
+
+#write .code-tooltip .ty-input {
+  border: solid 1px var(--borders);
+  height: 2rem;
+  line-height: 2rem;
+  margin: 0rem;
+  padding-left: 0.5rem !important;
+  text-align: left;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+  transition-duration: 0.3s;
+  transition-property: border;
+}
+
+#write .code-tooltip .ty-input:focus {
+  border-color: var(--primary-color);
+}
+
+.html-for-mac .ty-cm-lang-input:empty:after {
+  left: 0.5rem;
+}
+
+.autoComplt-list li,
+.fences-auto-suggest li {
+  font-weight: 500;
+  transition-duration: 0.3s;
+  transition-property: background-color, color;
+}
+
+.autoComplt-list li.active,
+.fences-auto-suggest li:hover {
+  background-color: var(--boxes);
+  color: var(--primary-color);
+}
+
+.md-fences,
+tt {
+  border-radius: 0.3rem;
+  color: #ffffff;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+}
+
+code {
+  padding: 0.25rem 0.5rem;
+  background-color: var(--boxes);
+  font-size: 0.9rem;
+  border-radius: 0.2rem;
+}
+
+.md-fences .CodeMirror div.CodeMirror-cursor,
+.md-htmlblock-panel .CodeMirror div.CodeMirror-cursor {
+  border-left: solid 1px white;
+}
+
+.md-fences {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  background-color: var(--mds);
+}
+
+/*DIAGRAMS*/
+
+.md-diagram-panel {
+  color: var(--text-color);
+  border: solid 1px var(--borders);
+  border-radius: 0.3rem;
+}
+
+.md-diagram-panel text,
+.md-diagram-panel .label {
+  color: var(--text-color);
+}
+
+.md-diagram-panel text {
+  fill: var(--text-color) !important /*required*/;
+}
+
+.md-diagram-panel-error {
+  color: var(--danger-color);
+}
+/*CHECKBOXES*/
+
+.md-task-list-item > input:before,
+input[type='checkbox']:before {
+  border-radius: 0.2rem;
+  margin-top: -0.08rem;
+  margin-left: -0.1rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--borders);
+  content: ' ';
+  display: block;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+}
+
+.md-task-list-item:hover > input:before,
+input[type='checkbox']:hover:before {
+  background-color: var(--boxes-darker);
+}
+
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before,
+input[type='checkbox']:checked:before {
+  background-color: var(--primary-color);
+}
+
+.md-task-list-item:hover > input:checked:before,
+.md-task-list-item:hover > input[checked]:before,
+input[type='checkbox']:hover:checked:before {
+  background-color: var(--primary-color-darker);
+}
+
+.md-task-list-item > input:after,
+.md-task-list-item > input:after,
+input[type='checkbox']:after {
+  transform: rotate(-45deg);
+  position: absolute;
+  border: 2px solid white;
+  border-top: 0;
+  border-right: 0;
+  top: 0.16rem;
+  left: 0.1rem;
+  width: 0.6rem;
+  height: 0.375rem;
+  content: ' ';
+  opacity: 0;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+}
+
+.md-task-list-item > input:checked:after,
+.md-task-list-item > input[checked]:after,
+input[type='checkbox']:checked:after {
+  opacity: 1;
+}
+
+.ty-preferences input[type='checkbox']:before {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.ty-preferences input[type='checkbox']:after {
+  width: 0.5rem;
+  height: 0.32rem;
+  top: 0.19rem;
+  left: 0.14rem;
+}
+
+@media print {
+  html {
+    font-size: 13px;
+  }
+
+  table,
+  pre {
+    page-break-inside: avoid;
+  }
+
+  pre {
+    word-wrap: break-word;
+  }
+}
+
+#write pre.md-meta-block {
+  padding: 1rem;
+  line-height: 1.45;
+  background-color: var(--boxes);
+  border: 0;
+  border-radius: 0.3rem;
+  color: var(--text-color);
+  border-left: solid 4px var(--boxes-darkest);
+}
+
+.md-image > .md-meta {
+  border-radius: 3px;
+  padding: 2px 0px 0px 4px;
+  font-size: 0.9em;
+  color: inherit;
+}
+
+.md-tag {
+  color: var(--md-char-color);
+  opacity: 1;
+}
+
+.md-toc {
+  margin: 1.5rem 0rem;
+}
+
+/*MATH*/
+
+.md-rawblock {
+  margin: 1.5rem 0rem;
+}
+
+.md-rawblock-container {
+  transition-duration: 0.3s;
+  transition-property: box-shadow, border;
+  padding: 8px;
+  border: solid 1px transparent;
+  border-radius: 0.3rem;
+}
+
+.md-rawblock:hover > .md-rawblock-container {
+  background-color: transparent;
+  border: solid 1px var(--borders);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+}
+
+.md-mathblock-input .CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid white;
+}
+
+.md-math-block .md-rawblock-control:not(.md-rawblock-tooltip) {
+  background-color: var(--bg-color);
+  border-left: solid 2px var(--primary-color);
+  border-right: solid 2px var(--primary-color);
+}
+
+.md-math-block .md-rawblock-before {
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  border-top: solid 2px var(--primary-color);
+}
+
+.md-math-block .md-rawblock-after {
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  border-bottom: solid 2px var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+#write .md-math-block .code-tooltip {
+  width: 100%;
+}
+
+/*HTML*/
+
+.md-htmlblock-panel {
+  border: solid 2px var(--primary-color);
+  border-radius: 0.3rem;
+}
+
+/*FOOTER*/
+
+.footer-item {
+  opacity: 1 !important;
+  color: var(--light-text-color);
+  transition: 0.3s;
+  background: none !important;
+}
+
+.footer-item:hover {
+  color: var(--light-text-color-brighter) !important;
+}
+
+#outline-btn:hover {
+  color: var(--light-text-color-brighter) !important;
+}
+
+/*SIDEBAR*/
+
+#typora-sidebar {
+  border-right: solid 1px var(--borders);
+}
+
+.info-panel-tab {
+  opacity: 1;
+}
+
+.info-panel-tab-border {
+  color: var(--primary-color);
+}
+
+#ty-sidebar-search-back-btn {
+  margin: auto;
+}
+
+.ty-show-outline-filter #file-library-search,
+.ty-show-search #file-library-search {
+  height: 4rem;
+}
+
+#file-library-search-input {
+  height: 2rem;
+}
+
+#file-library-search-panel input {
+  margin-top: 8px !important;
+}
+
+.ty-sidebar-search-panel .searchpanel-search-option-btn {
+  top: 14px;
+}
+
+#typora-sidebar #filesearch-case-ion-btn,
+#typora-sidebar #filesearch-word-ion-btn {
+  background: none;
+  margin-top: 0.45rem;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+#typora-sidebar #filesearch-case-ion-btn:hover,
+#typora-sidebar #filesearch-word-ion-btn:hover {
+  color: var(--primary-color);
+}
+
+/*sidebar outline*/
+
+#close-outline-filter-btn {
+  top: 15px;
+  opacity: 1;
+  color: var(--light-text-color) !important;
+}
+
+#close-outline-filter-btn:hover {
+  color: var(--primary-color) !important;
+  background-color: transparent !important;
+}
+
+#close-outline-filter-btn:active {
+  background-color: transparent !important;
+}
+
+#outline-content {
+  padding-right: 0px;
+  line-height: 1rem;
+}
+
+.outline-item {
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.outline-item .outline-label {
+  display: block;
+  width: 100%;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-right: solid 2px transparent;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--light-text-color-darker);
+  transition-duration: 0.3s;
+  transition-property: color;
+}
+
+.outline-item:hover {
+  background: none;
+}
+
+.outline-item:hover .outline-label {
+  color: var(--primary-color);
+}
+
+.outline-label:hover {
+  text-decoration: none;
+}
+
+.outline-active.outline-label {
+  border-right: solid 2px var(--primary-color);
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.outline-expander {
+  padding-top: 0.4rem;
+  padding-right: 0.5rem;
+}
+
+/*sidebar file-list and search results*/
+
+#file-library-list[data-state='complete'] #sidebar-loading-template {
+  padding: 0rem;
+}
+
+#typora-sidebar .file-list-item,
+.ty-search-item {
+  border: none;
+  transition-duration: 0.3s !important;
+  transition-property: background-color, border, color !important;
+  padding: 1rem;
+}
+
+#typora-sidebar .file-list-item:hover,
+.ty-search-item:hover {
+  background: var(--borders);
+}
+
+#typora-sidebar .ty-search-item-line:hover,
+#typora-sidebar .ty-search-item-line.active {
+  background-color: transparent;
+}
+
+#typora-sidebar .ty-search-item-line.active {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+#typora-sidebar .file-list-item-file-name {
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin-bottom: 0rem;
+  line-height: 1.8rem;
+  float: right;
+}
+
+#typora-sidebar .file-list-item-file-ext-part {
+  font-weight: 800;
+  opacity: 0.5;
+}
+
+#typora-sidebar .file-list-item-parent-loc,
+#typora-sidebar .file-list-item-time {
+  font-weight: 400;
+  opacity: 0.5;
+  display: block;
+}
+
+#typora-sidebar .file-list-item-summary {
+  float: left;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+#typora-sidebar input.file-list-item-file-name {
+  margin: 0.5rem 0rem 0.5rem 0.7rem;
+  padding: 0.4rem !important;
+  line-height: 1rem;
+  float: right;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  background-color: var(--bg-color) !important;
+}
+
+#typora-sidebar .file-list-item.file-library-file-node {
+  border: none;
+}
+
+#typora-sidebar .file-tree-node.active .file-node-background,
+#typora-sidebar .file-list-item.active,
+#typora-sidebar .ty-search-item.active {
+  background-color: var(--bg-color);
+  outline: 1px solid var(--borders);
+  border: none;
+  color: var(--primary-color) !important;
+}
+
+#typora-sidebar .file-tree-node.active .file-node-content {
+  color: var(--primary-color) !important;
+}
+
+#typora-sidebar .file-tree-node {
+  padding: 0rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-left: 0.8rem;
+}
+
+#typora-sidebar .file-tree-node .file-node-content {
+  padding: 0rem;
+  line-height: 2.2rem;
+  height: 2.2rem;
+  background: none;
+}
+
+#typora-sidebar .file-tree-node .file-node-background {
+  padding: 0rem;
+  height: 2.2rem;
+}
+
+#typora-sidebar .file-tree-node .file-node-icon {
+  margin-right: 0.5rem;
+}
+
+#typora-sidebar .file-tree-node .file-node-icon.fa-file-text-o {
+  margin-top: 0.33rem;
+}
+
+#typora-sidebar .file-tree-node .file-node-icon.fa-folder {
+  margin-top: 0.36rem;
+}
+
+#typora-sidebar .file-tree-node .fa-caret-down,
+#typora-sidebar .file-tree-node .fa-caret-right {
+  position: relative;
+  top: 5px;
+}
+
+#typora-sidebar .file-tree-node .file-tree-rename-input {
+  height: 2.2rem;
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0rem;
+  padding-left: 0rem;
+}
+
+/*no left border*/
+#typora-sidebar .file-tree-node.active > .file-node-background {
+  border: none;
+}
+
+/*no dotted highlighting*/
+.file-library-node:not(.file-node-root):focus > .file-node-content {
+  outline: none;
+}
+
+#typora-sidebar #sidebar-files-menu {
+  border: solid 1px var(--borders);
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+}
+
+#typora-sidebar #ty-sidebar-footer {
+  border-top: solid 1px var(--borders);
+  background-color: var(--bg-color);
+  font-weight: 500;
+}
+
+#typora-sidebar #ty-sidebar-footer li {
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
+}
+
+#typora-sidebar #ty-sidebar-footer li:hover {
+  color: var(--primary-color);
+  background-color: var(--boxes);
+}
+
+#typora-sidebar .ty-search-item-collapse-icon {
+  top: 9px;
+}
+
+/*cursor*/
+.file-node-content:hover {
+  cursor: pointer;
+}
+
+.file-tree-node:not(.file-node-root):not(.file-node-expanded) .file-node-background {
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+.file-tree-node:not(.file-node-root):not(.file-node-expanded):hover .file-node-background {
+  background-color: var(--borders);
+}
+
+/*sidebar footer*/
+#typora-sidebar .sidebar-footer-item {
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
+  font-weight: 700;
+}
+
+#typora-sidebar .sidebar-footer-item:hover {
+  color: var(--primary-color);
+  background-color: var(--boxes);
+}
+
+#typora-quick-open {
+  background-color: var(--bg-color);
+  border: 1px solid var(--borders);
+  border-radius: 0.3rem;
+  padding: 0rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+}
+
+#typora-quick-open-input {
+  margin-right: 20px;
+}
+
+#typora-quick-open-input .input {
+  box-shadow: none;
+  border: none;
+  margin: 0.5rem;
+  margin-left: 0.8rem;
+}
+
+.typora-quick-open-item {
+  background-color: var(--bg-color);
+  border: none;
+  font-weight: 500;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+.typora-quick-open-item:hover {
+  background-color: var(--boxes);
+  color: var(--primary-color);
+}
+
+.typora-quick-open-item.active {
+  background-color: var(--boxes);
+  border: none;
+}
+
+.ty-quick-open-category-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  opacity: 1;
+  color: var(--light-text-color);
+  line-height: 32px;
+  padding-top: 6px;
+  height: 32px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+  border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+.md-lang {
+  color: var(--primary-color);
+}
+
+/*NOTIFICATION*/
+
+#md-notification {
+  border-bottom: solid 1px var(--borders);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+}
+
+#md-notifcation .btn {
+  border: 0;
+}
+
+/*PREFERENCES*/
+
+.ty-preferences {
+  font-family: var(--font-family);
+}
+
+.ty-preferences .window-header {
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+  border-bottom: solid 1px var(--borders);
+}
+
+.ty-preferences .window-header-content {
+  background-color: var(--bg-color);
+  margin: 0rem;
+}
+
+.ty-preferences .window-header h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0rem;
+  margin-left: 1rem;
+}
+
+.unibody-window .ty-preferences .window-header h2 {
+  margin-left: 1rem !important;
+}
+
+.ty-preferences .window-header-back {
+  margin-left: 1.2rem;
+}
+
+.ty-preferences .window-header-back .icon {
+  border-right: none;
+}
+
+/*preferences sidebar*/
+.ty-preferences .window-content {
+  background-color: var(--bg-color);
+}
+
+.ty-preferences .nav-group-item {
+  color: var(--text-color);
+  height: 2.5rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  padding: 0px 0px 0px 2rem;
+  font-size: 1rem;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+.ty-preferences .nav-group-item:hover {
+  background-color: var(--borders);
+  border-radius: 0px;
+}
+
+.ty-preferences .nav-group-item.active {
+  border-radius: 0rem;
+  border: none;
+  outline: 1px solid var(--borders);
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+
+.ty-preferences .pane-sm {
+  background: var(--boxes);
+  flex-basis: 240px;
+  flex-grow: 0;
+  justify-content: center;
+  border-right: 1px solid var(--borders);
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.ty-preferences .pane-sm .list-group {
+  width: 100%;
+  max-width: 30rem;
+}
+
+.ty-preferences .list-group-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ty-preferences .list-group-header div {
+  width: 100%;
+  margin-right: 18px;
+  margin-left: 18px;
+}
+
+.ty-preferences .pane-sm .search-input {
+  margin: 0rem !important;
+  width: 100%;
+  font-size: 1rem !important;
+  height: 2.75rem;
+}
+
+.ty-preferences .pane-sm .search-input:active,
+.ty-preferences .pane-sm .search-input:focus {
+  border: solid 1px var(--primary-color) !important;
+  outline: none;
+}
+
+/*preferences main*/
+.ty-preferences .panel-header {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+/*preferences stuff*/
+.ty-preferences .dropdown-menu > li,
+.dropdown-item {
+  font-weight: 500;
+  font-size: 1rem;
+  transition-duration: 0.2s;
+  transition-property: all;
+}
+
+.ty-preferences .dropdown-menu .active,
+.ty-preferences .dropdown-menu li:hover,
+.dropdown-item:hover {
+  background-color: var(--boxes);
+  color: var(--primary-color);
+}
+
+#ty-spell-check-dict-missing-secondary-btn:hover {
+  color: var(--primary-color) !important;
+}
+
+.header-close .icon {
+  border: none !important;
+}
+/*DROPDOWN*/
+
+.dropdown-menu:not(.megamenu-menu-list),
+.auto-suggest-container {
+  background-color: var(--bg-color);
+  border: solid 1px var(--borders) !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+  user-select: none;
+}
+
+.dropdown-menu > li > a {
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition-duration: 0.2s;
+  transition-property: all;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > li > a:hover,
+.menu-style-btn.active,
+.context-menu.dropdown-menu > .active > a,
+.context-menu.dropdown-menu > li > a:hover {
+  color: var(--primary-color);
+  background-color: var(--boxes);
+}
+
+.menu-style-btn {
+  color: var(--text-color);
+  border: none;
+  transition-duration: 0.2s;
+  transition-property: all;
+}
+
+.menu-style-btn:hover {
+  color: var(--primary-color);
+  background-color: var(--boxes);
+  border: none;
+}
+
+header .menu-style-btn:hover {
+  background-color: transparent;
+}
+
+.menu-item-container {
+  padding: 0 12px 0 4px;
+}
+
+.menu-item-container a.menu-style-btn {
+  padding: 0.3rem 0.6rem;
+  margin: 0;
+}
+
+.dropdown-menu .divider {
+  border-color: var(--borders);
+}
+
+/*BUTTON*/
+
+.btn,
+button,
+.md-image-btn {
+  border: none !important;
+  border-radius: 0.3em !important;
+  color: var(--text-color) !important;
+  transition-duration: 0.2s;
+  transition-property: all;
+  font-size: 0.9em !important;
+  font-weight: 500;
+  outline: none;
+}
+
+.btn-default,
+.md-image-btn {
+  border: none !important;
+  border-radius: 0.3em !important;
+  background-color: var(--boxes) !important;
+}
+
+.btn:hover,
+.button-hover,
+.md-image-btn:hover {
+  border: none;
+  border-radius: 0.3em;
+  background-color: var(--borders) !important;
+  color: var(--text-color);
+}
+
+button:active,
+button.active,
+.btn:active,
+.btn-default:active,
+.md-image-btn:active {
+  border: none;
+  border-radius: 0.3em;
+  background-color: var(--boxes-darker) !important;
+  box-shadow: none;
+  outline: none;
+  color: var(--text-color);
+}
+
+.btn:focus,
+.md-image-btn:focus {
+  border: none !important;
+  outline: none !important;
+  background-color: var(--boxes-darker);
+}
+
+.btn-primary {
+  border: none;
+  border-radius: 0.3em;
+  background-color: var(--primary-color);
+  color: white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: white;
+  background-color: var(--primary-color-darker) !important;
+}
+
+.btn.dropdown-toggle-split,
+.btn.dropdown-toggle-split:hover {
+  border-radius: 0em 0.3em 0.3em 0em;
+}
+
+#ty-spell-check-dict-missing-primary-btn {
+  border-radius: 0.3em 0em 0em 0.3em;
+}
+
+.open > .dropdown-toggle.btn-primary {
+  background-color: var(--primary-color);
+  border-color: transparent;
+}
+
+/*GHOST BUTTON*/
+
+.window-header button,
+#close-sidebar-menu-btn,
+.html-for-mac .sidebar-tab-btn,
+.label-hint,
+.ty-table-edit .btn,
+.zoom-hint-button {
+  background-color: transparent !important;
+  color: var(--light-text-color) !important;
+  opacity: 1 !important;
+  transition-duration: 0.2s;
+  transition-property: color;
+}
+
+.window-header button:hover,
+.window-header button:focus,
+#close-sidebar-menu-btn:hover,
+#close-sidebar-menu-btn:focus,
+.html-for-mac .sidebar-tab-btn:hover,
+.html-for-mac .sidebar-tab-btn:focus,
+.label-hint:hover,
+.label-hint:focus,
+.ty-table-edit .btn:hover,
+.ty-table-edit .btn:focus,
+.zoom-hint-button:hover,
+.zoom-hint-button:focus {
+  color: var(--primary-color) !important;
+  background: none !important;
+}
+
+.ty-table-edit .btn.active {
+  color: var(--primary-color) !important;
+  box-shadow: none;
+}
+
+/*IMAGE BUTTON*/
+
+.md-image-btn {
+  background-color: var(--boxes);
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+.md-image-btn:before {
+  color: var(--text-color);
+  transition-duration: 0.2s;
+  transition-property: color;
+}
+
+.md-image-btn:hover {
+  background-color: var(--borders);
+}
+
+.md-image-btn:hover:before {
+  color: var(--primary-color);
+}
+
+.md-image-input-src-btn {
+  border-radius: 0.3rem 0rem 0rem 0.3rem !important;
+}
+
+.md-image-pick-file-btn {
+  border-left: none;
+  border-radius: 0rem 0.3rem 0.3rem 0rem !important;
+}
+
+/*SEARCH-INPUTS*/
+
+.search-input,
+.search,
+.form-control,
+#file-library-search-input {
+  background-color: transparent !important;
+  border-radius: 0.3rem !important;
+  border: solid 1px var(--boxes-darker2) !important;
+  box-shadow: none !important;
+  color: var(---heading-text-color) !important;
+  font-size: 0.9rem !important;
+  font-weight: 500;
+  padding: 0.7rem !important;
+  height: 2rem;
+  transition-duration: 0.2s;
+  transition-property: border;
+}
+
+.search-input:focus,
+.search:focus,
+.form-control:focus,
+#file-library-search-input:focus {
+  background-color: transparent !important;
+  border-radius: 0.3rem !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: none !important;
+  color: var(--heading-text-color) !important;
+  font-size: 0.9rem !important;
+  font-weight: 500;
+  padding: 0.7rem !important;
+}
+
+.search-input::placeholder,
+.search::placeholder,
+.form-control::placeholder,
+#file-library-search-input::placeholder {
+  color: var(--light-text-color-brighter) !important;
+}
+
+.clear-btn-icon {
+  top: 9px !important /*required*/;
+  right: 9px !important /*required*/;
+}
+
+.content tr.search-hit,
+.search-hit,
+.md-search-hit,
+.md-search-hit.md-search-select,
+.md-search-select,
+.ty-file-search-match-text {
+  background: rgba(56, 132, 255, 0.3) !important;
+}
+
+/*ZOOM HINT*/
+
+#zoom-hint {
+  border-radius: 0.3rem;
+  border: solid 1px var(--borders);
+  user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+}
+
+#zoom-hint #zoom-hint-reset {
+  border-left: none;
+  font-weight: 600;
+}
+
+/*SEARCHPANEL*/
+
+#md-searchpanel {
+  border-bottom: 1px solid var(--borders);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+  max-height: 46px;
+}
+
+#md-searchpanel.searchpanel-replace-mode {
+  max-height: 84px;
+}
+
+#md-searchpanel input {
+  height: 2rem;
+  margin: 0rem !important;
+  padding: 6px 12px !important;
+  font-size: 12px !important;
+}
+
+#md-searchpanel .input-group-addon {
+  height: 2rem;
+}
+
+#md-searchpanel .input-group-addon.close-btn {
+  padding-left: 8px;
+}
+
+.unibody-window #md-searchpanel .btn {
+  line-height: 2rem;
+}
+
+.searchpanel-search-option-btn {
+  top: 9px;
+  border: none;
+  color: var(--light-text-color-brighter) !important /*required*/;
+  transition-duration: 0.3s;
+}
+
+.searchpanel-search-option-btn:hover {
+  color: var(--primary-color) !important /*required*/;
+  background-color: transparent !important /*required*/;
+}
+
+.searchpanel-search-option-btn.select,
+.searchpanel-search-option-btn.active {
+  color: white !important;
+  background-color: var(--primary-color) !important;
+}
+
+#searchpanel-case-option-btn {
+  right: 33px;
+}
+
+#searchpanel-word-option-btn {
+  right: 9px;
+}
+
+#searchpanel-word-option-btn,
+#searchpanel-case-option-btn {
+  background: none;
+}
+
+#md-searchpanel .btn:not(.close-btn):hover {
+  box-shadow: none;
+}
+
+/*NUMBER-INPUT*/
+
+input[type='text']::placeholder {
+  color: var(--light-text-color-brighter) !important;
+}
+
+input[type='number'] {
+  background-color: var(--boxes) !important;
+  border: none !important;
+  border-radius: 0.3rem;
+}
+
+input[type='number']:focus {
+  background-color: var(--item-hover-bg-color) !important;
+}
+
+/*SELECTS*/
+
+select {
+  background-color: var(--bg-color) !important;
+  border-radius: 0.3rem !important;
+  border: solid 1px var(--boxes-darker2) !important;
+  box-shadow: none !important;
+  color: var(---heading-text-color) !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  padding: 0.3rem !important;
+  height: 2.1rem;
+  transition-duration: 0.2s;
+  transition-property: border;
+}
+
+select:hover {
+  background-color: var(--bg-color) !important;
+  border-radius: 0r3em !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: none !important;
+  color: var(--heading-text-color) !important;
+  font-size: 0.9rem !important;
+}
+
+/*MODAL*/
+
+.modal-header,
+#common-dialog .modal-header {
+  border-bottom: solid 1px var(--borders);
+  padding-bottom: 15px;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  user-select: none;
+}
+
+.modal-body {
+  font-size: 0.9rem;
+  color: var(--light-text-color-brighter);
+  user-select: none;
+}
+
+.modal-content {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+  border: solid 1px var(--borders);
+  border-radius: 0.3rem;
+}
+
+.modal-footer {
+  border-top: solid 1px var(--borders);
+}
+
+.modal-open .modal.fade.in {
+  background-color: rgba(2, 7, 12, 0.781);
+}
+
+/*SCROLLBAR*/
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 8px;
+  padding: 4px;
+  position: absolute;
+  background-color: var(--borders);
+  border: solid 1px var(--boxes-darker);
+  border-radius: 4.5px;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: var(--borders);
+}
+
+::-webkit-scrollbar-corner {
+  background: 0 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--boxes-darker2);
+  background-clip: padding-box;
+  border-radius: 4.5px;
+  margin-right: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--boxes-darkest);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--boxes-darkest);
+}
+
+/*LANGS*/
+
+.ty-spell-check-panel-item {
+  font-weight: 500;
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
+}
+
+.ty-spell-check-panel-item:hover {
+  color: var(--primary-color);
+  background-color: var(--boxes);
+}
+
+.ty-spell-check-panel-item.ty-active {
+  background-color: var(--boxes);
+}
+
+/*TOOLTIP*/
+
+.ty-tooltip {
+  color: var(--text-color) !important;
+  background-color: var(--boxes) !important;
+  border-radius: 0.3rem !important;
+  border: 1px solid var(--borders) !important;
+  -webkit-filter: none !important;
+  filter: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+}
+
+/*FOOTER*/
+
+footer.ty-footer {
+  border: none;
+}
+
+.footer-item:hover {
+  background-color: var(--boxes) !important;
+}
+
+#footer-word-count-info {
+  padding: 4px 0;
+}
+
+.footer-word-count-info-line {
+  padding: 0.25rem;
+  line-height: 1.6rem;
+}
+
+#footer-word-count-info tr {
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition-duration: 0.2s;
+  transition-property: all;
+}
+
+#footer-word-count-info tr td:nth-child(1) {
+  padding: 0rem;
+  padding-right: 1rem;
+}
+
+#footer-word-count-info .ty-footer-word-count-all tr:hover {
+  color: var(--primary-color) !important;
+  background-color: var(--boxes) !important;
+}
+
+/*MEGAMENU*/
+
+.megamenu-menu {
+  box-shadow: none;
+  background-color: var(--boxes);
+  border-right: 1px solid var(--borders);
+}
+
+.megamenu-opened .megamenu-menu {
+  left: 0px;
+}
+
+#megamenu-menu-list {
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+}
+
+#megamenu-menu-list li a {
+  color: var(--text-color);
+  height: 2rem;
+  line-height: 1.8rem;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+#megamenu-menu-list li a:hover {
+  background-color: var(--borders);
+}
+
+#megamenu-menu-list li a.active {
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+  outline: solid 1px var(--borders);
+}
+
+#megamenu-menu-list .divider {
+  background-color: var(--borders);
+  margin: 16px 0 0 0;
+}
+
+.megamenu-menu-list .saved #m-saved {
+  cursor: default;
+}
+
+.megamenu-menu-list .saved #m-saved .fa {
+  color: var(--primary-color);
+}
+
+.megamenu-menu-list .saved #m-saved:hover {
+  background-color: transparent;
+}
+
+.megamenu-menu-list #m-close:hover {
+  color: var(--danger-color);
+}
+
+.megamenu-menu-header {
+  border-bottom: solid 1px var(--borders);
+  margin-bottom: 1.2rem;
+  height: 74px;
+  transition-duration: 0.3s;
+}
+
+.megamenu-menu-header:hover {
+  background-color: var(--borders);
+}
+
+.megamenu-menu-header #megamenu-menu-header-title {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 16px;
+  left: 56px;
+  top: 24px;
+}
+
+#megamenu-back-btn {
+  color: var(--text-color);
+  font-size: 16px;
+  left: 24px;
+  top: 24px;
+}
+
+.megamenu-opened header {
+  background-color: var(--bg-color);
+  background-image: none;
+}
+
+.megamenu-content {
+  background-color: var(--bg-color);
+  background-image: none;
+}
+
+.megamenu-menu-panel:not(:first-of-type) {
+  margin-top: 2rem;
+}
+
+.megamenu-menu-panel h1 {
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin: 1rem 0rem 0.4rem 0rem;
+}
+
+.megamenu-menu-panel h2 {
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin: 1rem 0rem 0.4rem 0rem;
+}
+
+/*recent files*/
+
+#recent-file-panel tbody tr {
+  font-weight: 600;
+  transition-duration: 0.4s;
+}
+
+#recent-file-panel tbody tr:hover,
+.megamenu-menu-panel tbody tr:hover td:nth-child(1) {
+  color: var(--primary-color);
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+  background-color: var(--boxes);
+}
+
+/*about help*/
+
+.about-content-slogon {
+  color: var(--light-text-color);
+}
+
+/*for the god himself*/
+.about-content-slogon span {
+  color: var(--primary-color) !important;
+}
+
+#about-content tbody tr {
+  font-weight: 500;
+  transition-duration: 0.4s;
+}
+
+#about-content tbody tr:hover {
+  color: var(--primary-color);
+  background-color: var(--boxes) !important /*required important*/;
+}
+
+.long-btn {
+  margin-bottom: 12px;
+  margin-left: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 6px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--borders);
+  border-radius: 0.3rem;
+  padding: 1rem;
+
+  font-weight: 500;
+  font-size: 1rem;
+
+  transition-duration: 0.2s;
+}
+
+.long-btn:hover {
+  background-color: var(--bg-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color) !important /*important required*/;
+}
+
+#m-import-local:hover .preference-item-hint {
+  color: var(--primary-color);
+  opacity: 0.7;
+}
+
+#recent-file-panel-action-btn {
+  height: 34px;
+  border: none;
+  background-color: var(--boxes);
+}
+
+#theme-preview-grid {
+  max-width: none;
+  padding: 1rem;
+  background-color: var(--boxes);
+  border-radius: 0.5rem;
+}
+
+.theme-preview-div {
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 15px;
+  margin: 0.75rem;
+  transition-duration: 0.3s;
+}
+
+.theme-preview-div:hover {
+  box-shadow: rgba(0, 0, 0, 0.6) 3px 8px 15px;
+  cursor: pointer;
+  transform: rotate3d(1, -0.2, 0.2, 15deg);
+}
+
+.theme-preview-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+}
+
+.theme-preview-content html {
+  width: 100%;
+  height: 100%;
+}
+
+.theme-preview-div.active .fa {
+  color: var(--primary-color);
+  bottom: 4px;
+  left: 4px;
+}
+
+.theme-preview-div .fa-check-circle:before {
+  background-color: var(--bg-color);
+  padding: 0px 2px;
+  border-radius: 1rem;
+}
+
+.megamenu-menu-panel tbody tr {
+  border-radius: 0.3rem;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+.megamenu-menu-panel tbody tr:hover {
+  background-color: var(--borders) !important /*required important*/;
+}
+
+/*MIN MAX CLOSE*/
+#w-min,
+#w-max,
+#w-restore,
+#w-close {
+  border-radius: 0px !important;
+  font-size: 10px !important;
+  width: 46px !important;
+  height: 29px !important;
+}
+
+.btn.toolbar-icon svg,
+.btn.toolbar-icon .ty-icon {
+  position: relative;
+  top: 2px;
+}
+
+#w-close.btn.toolbar-icon .ty-icon {
+  left: 1px;
+}
+
+#w-close:hover {
+  background-color: var(--danger-color) !important;
+  color: white !important;
+}
+
+/*EXTRA STUFF*/
+
+a[type='page-link'] {
+  display: block;
+  background-color: var(--bg-color);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+  border: 1px solid var(--borders);
+  border-radius: 0.3rem;
+  padding: 1rem;
+
+  font-weight: 600;
+
+  transition-duration: 0.2s;
+  transition-property: border, box-shadow;
+}
+
+a[type='page-link']:hover {
+  box-shadow: rgba(0, 0, 0.2, 0.2) 0px 3px 8px 0px;
+  border: 1px solid var(--primary-color);
+}
+
+p[type='description'] {
+  color: var(--light-text-color);
+  margin: 0rem;
+  margin-bottom: 1rem;
+}
+
+
+
+</style>
+</head>
+<body class='typora-export os-windows'>
+<div id='write'  class=''><p><a href='https://paper.dropbox.com/doc/Bandcamp-Our-Silent-Hero-OIRvtOwuWtVLuo2FJ0veB'><span>+Bandcamp, Our Silent Hero</span></a><span> # Notes</span></p><h1><a name="bandcamp-was-music-streamings-hero-all-along" class="md-header-anchor"></a><span>Bandcamp Was music streaming’s hero, all along</span></h1><p><span>Bandcamp has been your streaming salvation since the beginning</span></p><hr /><p><em><span>Extratone</span></em><span> principally began as an effort to build a “platform” for a specific community of independent electronic musicians and friends whose culture of expression remained </span><em><span>so</span></em><span> centrally unique that I eventually found myself wanting little else but to amplify them as much as possible. Embarrassingly, the solution couldn’t have been more obviously riveted to the tip of my nose, but it wasn’t until I re-submerged headfirst into online music communities in the spirit of re-versing myself for this essay, running down every fleeting interview with Bandcamp’s core executives, and catching myself up with their rapidly-developing Editorial voice that I realized how closely parallel our end goals ran us. I put off writing about Bandcamp for a long time, but when I finally began work on this essay in the Spring, I (and myself,) throughout the entirety of our creative lives – one of only a handful of true constants. There is no more pertinent way to introduce this new featured vertical of ours in preparation for our upcoming relaunch as an Electronic Music Magazine than with the story of the music industry’s efforts to duplicate and maintain its ancient &amp; terrible power across the digital transition, and of those Independent artists, collectives, labels, and sparse services who’ve been building an ark for all of us (not just the hipsters.) My bias is dense on this subject, but so are my expectations. I’ve distributed embedded audio players throughout the work which play exclusively (with only two exemptions) from a collection of music I would almost certainly have never discovered in a world without Bandcamp.</span></p><h2><a name="2008" class="md-header-anchor"></a><span>2008</span></h2><p><span>[ ] How many times can I begin a software or service-profiling argument with “it’s 2008 and I am in 8th grade?”</span>
+<span>[ ] </span><a href='https://web.archive.org/web/20090716104620/http:/bandcamp.com'><span>2008</span></a>
+<span>[ ] “</span><a href='https://daily.bandcamp.com/2008/09/16/hello-cleveland/'><span>What’s Bandcamp?</span></a><span>” – The </span><a href='https://daily.bandcamp.com/page/327/'><span>first page</span></a><span> of the Bandcamp Blog</span>
+<span>[ ] </span><a href='https://vimeo.com/1739268'><span>The first Bandcamp screencast</span></a>
+<span>[ ] “</span><a href='https://waxy.org/2008/09/bandcamp_launch/'><span>Oddpost Co-Founder Launches Bandcamp, Publishing Platform for Musicians</span></a><span>” – </span><em><span>Waxy</span></em>
+<span>[ ] “</span><a href='https://daily.bandcamp.com/2008/10/17/feelin-the-luv/'><span>Feelin the Luv</span></a><span>” - Bandcamp Blog</span>
+<span>[ ] &quot;</span><a href='https://blogger.googleblog.com/2009/08/let-music-play.html'><span>Let the Music Play</span></a><span>” - </span><em><span>Blogger</span></em>
+<a href='https://www.dropbox.com/s/iu2zl9reeqfoesa/Digital%20Millennium%20Copyright%20Act%20-%20Unknown.epub?dl=0' target='_blank' class='url'>https://www.dropbox.com/s/iu2zl9reeqfoesa/Digital%20Millennium%20Copyright%20Act%20-%20Unknown.epub?dl=0</a></p><h2><a name="2010" class="md-header-anchor"></a><span>2010</span></h2><p><span>[ ] </span><a href='https://daily.bandcamp.com/2010/07/14/now-streaming-on-the-ipad-iphone/'><span>Streaming on iPhone in 2010</span></a>
+<span>[ ] “</span><a href='http://www.westword.com/music/noisetrade-vs-bandcamp-in-pay-what-you-want-grudge-match-5716539'><span>Noisetrade vs Bandcamp in pay-what-you-want grudge match</span></a><span>” - </span><em><span>Westword</span></em>
+<span>    “The record distributors are dying, but neither really end up being effective yet. Noisetrade doesn&#39;t offer enough for bands, whereas Bandcamp offers so much, it&#39;ll inevitably fail, since it has no profit model.”</span>
+<span>[ ] “</span><a href='https://www.theverge.com/2015/6/8/8744963/steve-jobs-jesus-people-dont-want-music-subscriptions'><span>Remember when Steve Jobs said even Jesus couldn’t sell music subscriptions</span></a><span>?” - </span><em><span>The Verge</span></em>
+<span>[ ] “</span><a href='https://daily.bandcamp.com/2010/02/11/oh-no-not-another-music-community/'><span>Oh No, Not Another Music Community!</span></a><span>&quot; - Bandcamp Blog</span>
+<span>[ ] “</span><a href='https://daily.bandcamp.com/2012/01/03/cheaper-than-free/'><span>Cheaper than Free</span></a><span>” - Bandcamp Blog</span>
+<span>[ ] “</span><a href='https://www.crosswalk.com/culture/music/the-new-music-revolution-11530091.html'><span>The New Music Revolution</span></a><span>” - </span><em><span>Crosswalk</span></em>
+<span>[ ] “</span><a href='https://readwrite.com/2012/01/03/lessons-learned-from-noisetrad/'><span>Lessons Learned From Noisetrade: Free and Legal Music Downloads</span></a><span>” - </span><em><span>readwrite</span></em>
+<span>[ ] “</span><a href='https://payusnomind.info/making-money-from-music/'><span>Making Money From Music You’re Giving Away Free</span></a><span>” - </span><em><span>PAYUSNOMIND</span></em>
+<span>[ ] “</span><a href='https://www.billboard.com/articles/columns/hip-hop/7669109/mixtapes-money-hip-hop-shadow-economy-mainstream'><span>Mixtapes &amp; Money: Inside the Mainstreaming of Hip-Hop&#39;s Shadow Economy</span></a><span>” - </span><em><span>billboard</span></em>
+<span>[ ] “</span><a href='https://www.theguardian.com/technology/2010/oct/27/limewire-shut-down'><span>LimeWire shut down by federal court</span></a><span>” - </span><em><span>The Guardian</span></em>
+<span>[ ] “&#39;</span><a href='https://www.pcmag.com/article2/0,2817,2371670,00.asp'><span>Anonymous&#39; Plans DDoS Attack on RIAA on Friday</span></a><span>” - </span><em><span>PC Magazine</span></em>
+<span>[ ] “</span><a href='https://www.theguardian.com/music/2010/feb/11/google-deletes-music-blogs'><span>Google shuts down music blogs without warning</span></a><span>” - </span><em><span>The Guardian</span></em>
+<span>[ ] “</span><a href='https://www.theregister.co.uk/2010/02/11/google_musicblogocide_2010/'><span>Google&#39;s &#39;Musicblogocide&#39; - blame the DMCA</span></a><span>” - </span><em><span>The Register</span></em>
+<span>[ ] “</span><a href='https://www.marketplace.org/2010/02/11/business/marketplace-scratch-pad/google-commits-blogocide'><span>Google commits ‘Blogocide’</span></a><span>” - </span><em><span>Marketplace</span></em>
+<span>[ ] “</span><a href='https://www.wired.com/2008/10/ten-years-later/'><span>10 Years Later, Misunderstood DMCA is the Law That Saved the Web</span></a><span>” - </span><em><span>wired</span></em></p><h2><a name="2013" class="md-header-anchor"></a><span>2013+</span></h2><p><span>[ ] </span><a href='https://daily.bandcamp.com/2013/10/25/its-over/'><span>iOS and Android app launch in 2013</span></a><span> - Bandcamp Blog</span>
+<span>[ ] I only think about a service or software when it’s bad, unfortunately.</span>
+<span>[ ] Bandcamp’s relative obscurity after all these years is also an example of how little </span><em><span>most</span></em><span> people actually care about music.</span>
+<span>[ ] As far as I’m concerned, it doesn’t get much better than when an innovative open-web idea enables millions of otherwise-obfuscated artists to share themselves beyond what The System was ever supposed to allow. Yeah, The Open Web is punk.</span>
+<span>[ ] “</span><a href='https://www.passionweiss.com/2014/05/16/we-used-to-sell-mixtapes-an-interview-with-kp-reilly-of-datpiff-com/'><span>We Used to Sell Mixtapes: An Interview with KP Reilly of DatPiff.com</span></a><span>” - </span><em><span>Passion of the Weiss</span></em></p><h2><a name="--bandcamp-ceo-sees-music-as-art-not-commodityhttpswwwmarketplaceorg20161221worldbandcamp-ceo-says-he-sees-music-art-not-commodity---marketplace" class="md-header-anchor"></a><span>[ ] &quot;</span><a href='https://www.marketplace.org/2016/12/21/world/bandcamp-ceo-says-he-sees-music-art-not-commodity'><span>Bandcamp CEO sees music as art, not commodity</span></a><span>” - </span><em><span>Marketplace</span></em></h2><p><span>[ ] “</span><a href='https://www.nytimes.com/2016/08/20/arts/music/bandcamp-shopping-for-music.html'><span>Is Bandcamp the Holy Grail of Online Record Stores?</span></a><span>” – </span><em><span>The New York Times</span></em>
+<span>[ ] Bandcamp’s entire history is available which is handy and adorable, but probably reflects a certain level of sincerity.</span>
+<span>[ ] “</span><a href='https://djmag.com/content/youtube-launches-youtube-music-and-youtube-premium-streaming-services'><span>YouTube launches YouTube Music and YouTube Premium Streaming Services</span></a><span>” - </span><em><span>DJ</span></em>
+<span>[ ] “</span><a href='https://www.theverge.com/2014/11/11/7196017/bandcamp-launching-subscriptions-for-individual-artists'><span>Bandcamp is going to let musicians offer their own digital subscriptions</span></a><span>” - </span><em><span>The Verge</span></em>
+<span>    “</span><a href='https://www.theguardian.com/technology/2014/nov/11/bandcamp-musicians-subscription-services'><span>Bandcamp to help musicians launch their own subscription services</span></a><span>” - </span><em><span>The Guardian</span></em>
+<span>[ ] As a precursor and now alternative to Patreon? 𐌣</span>
+<span>[ ] “</span><a href='https://www.wired.com/2016/07/fear-not-indie-musicians-web-can-still-bring-unexpected-victories/'><span>Fear Not, Indie Musicians, The Web Can Still Bring Unexpected Victories</span></a><span>” - </span><em><span>Wired</span></em>
+<span>[ ] “</span><a href='https://www.wired.com/2016/02/music-cant-last-forever-not-even-on-the-internet/'><span>Music Can&#39;t Last Forever, Not Even on the Internet</span></a><span>” - </span><em><span>Wired</span></em>
+<span>[ ] “</span><a href='https://www.theverge.com/2018/1/4/16850742/spotify-subscriber-count-70-million-users'><span>Spotify now has 70 million subscribers</span></a><span>” - </span><em><span>The Verge</span></em>
+<span>[ ] “</span><a href='https://www.theverge.com/2017/12/31/16792892/2017-tech-recap-streaming-music-spotify-soundcloud-pandora-tidal'><span>The Verge 2017 tech report card: Streaming music</span></a><span>” - </span><em><span>The Verge</span></em>
+<span>[ ] </span><a href='https://twitter.com/skrillbug/status/1008669170823770113'><span>Spotify is “killing music” thread on Twitter</span></a>
+<span>[ ] “</span><a href='https://www.m-magazine.co.uk/creators/9-things-we-learned-from-spotifys-game-plan/'><span>9 things we learned from Spotify’s game plan</span></a><span>” - </span><em><span>M Magazine</span></em>
+<span>[ ] “</span><a href='https://www.theverge.com/2018/6/6/17435070/spotify-artist-direct-licensing-advances-rumor'><span>Spotify is trying to lure artists into licensing their music directly</span></a><span>” - </span><em><span>The Verge</span></em>
+<span>[ ] “</span><a href='https://venturebeat.com/2008/10/22/facebook-music-is-getting-its-act-together/'><span>Facebook Music is getting its act together</span></a><span>” - </span><em><span>VentureBeat</span></em>
+<span>[ ] “</span><a href='https://www.eff.org/deeplinks/2008/08/drm-quietly-dies-streaming-music'><span>DRM for Streaming Music Dies a Quiet Death</span></a><span>” - </span><em><span>Electronic Frontier Foundation</span></em>
+<span>[ ] “</span><a href='http://www.alphr.com/features/218559/the-online-music-rip-off'><span>The online music rip-off</span></a><span>” - </span><em><span>alphr</span></em>
+<span>[ ] “</span><a href='https://www.cnet.com/news/bandcamp-for-cleaner-music-sites/'><span>Bandcamp: For cleaner music sites</span></a><span>” - </span><em><span>CNET</span></em>
+<span>[ ] “</span><a href='https://medium.com/dark-mountain/bandcamp-58c52e091124'><span>Bandcamp</span></a><span>” - Keith Parkins</span>
+<span>[ ] “</span><a href='https://bits.blogs.nytimes.com/2011/06/15/soundcloud-an-audio-sharing-site-hits-5-million-users/'><span>SoundCloud, an Audio-Sharing Site, Hits 5 Million Users</span></a><span>” - </span><em><span>The New York Times</span></em>
+<span>[ ] “</span><a href='https://www.wired.com/2009/07/soundcloud-threatens-myspace-as-music-destination-for-twitter-era/'><span>SoundCloud Threatens MySpace as Music Destination for Twitter Era</span></a><span>” - </span><em><span>Wired</span></em>
+<span>[ ] “</span><a href='https://www.cnet.com/news/photos-hands-on-with-pandoras-internet-radio-iphone-app/'><span>Photos: Hands-on with Pandora&#39;s Internet radio iPhone app</span></a><span>” - </span><em><span>CNET</span></em>
+<span>[ ] </span><a href='http://htmltimes.com/band-camp.php'><span>Joe Holt on Bandcamp</span></a><span> - </span><em><span>The HTML Times</span></em><span> (</span><a href='http://www.extratone.com/wp-content/uploads/2018/06/joeholt.mp3'><span>Audio</span></a><span>)</span>
+<span>[ ] Yzome:  I guess it&#39;s something I take for granted. Like &quot;thank god I don&#39;t have to look for a label to release this,&quot; and also it&#39;s seen as a legitimate platform (by people who might actually care about what I’m doing, at least), which I think is less offputting than uploading things to Mediafire or whatever else. It’s populist and boutique at the same time. but as for whether it&#39;s helped me, i don&#39;t know. i&#39;m miserable at PR so i often wish i did have a label to release on but i&#39;ve mostly been too stubborn to take that route and i don&#39;t think that does me any favors. but in like 2009 when i was trying to distribute my music at shows, i couldn&#39;t even pay most people to take a CD. that music was of a drastically lesser quality than what i do now so that&#39;s irrelevant, though, i think, but it&#39;s still the most relevant thing I have to compare it to. i&#39;ve done releases through labels, also, and it&#39;s kind of maddening to not know what my exact numbers are at any given time. and i think it&#39;s stupid of me to feel that way. but now that i&#39;ve had control i don&#39;t like relinquishing it, even though i&#39;m not putting it to good use, myself.</span>
+<span>[ ]  </span><a href='https://paper.dropbox.com/doc/Ethan-Diamond-at-XOXO-2014-zrUvm1cbf8Q8jwoXgikOj'><span>+Ethan Diamond at XOXO 2014</span></a>
+<span>[ ] “</span><a href='https://www.recode.net/2018/5/31/17397188/full-transcript-spotify-daniel-ek-code-2018'><span>Spotify CEO Daniel Ek at Code 2018</span></a><span>” - </span><em><span>Recode</span></em>
+<span>[ ] “</span><a href='https://pitchfork.com/features/oped/how-to-be-a-responsible-music-fan-in-the-age-of-streaming/'><span>How to Be a Responsible Music Fan in the Age of Streaming</span></a><span>” - </span><em><span>Pitchfork</span></em>
+<span>    “</span><a href='https://thescene.com/watch/pitchfork/pitchfork-docs-how-to-be-a-responsible-music-fan-in-the-age-of-spotify'><span>How to be a Responsible Music Fan in the Age of Spotify</span></a><span>” - </span><em><span>The Scene</span></em>
+<span>    Most of the music on Spotify is played less than 1% of the time.</span>
+<span>[ ] ”Or look now at how badly their applications already serve entire genres of less popular music. Spotify lists recordings by song title, album title, or featured artist name. But that information is so limited it leaves out even the other performers on a recording, a crucial aspect to classical and jazz.”</span>
+<span>[ ] “</span><a href='https://thebaffler.com/salvos/the-problem-with-muzak-pelly'><span>The Problem with Muzak</span></a><span>” - </span><em><span>The Baffler</span></em>
+<span>[ ] Automated music “discovery” is the opposite of that: “The downside to automated music discovery is that we’re encouraged to develop a taste profile and stick to it.” - “</span><a href='https://pigeonsandplanes.com/in-depth/2016/03/music-discovery-algorithms'><span>The Problem With Automating Music Discovery</span></a><span>” - </span><em><span>Pigeons &amp; Planes</span></em>
+<span>[ ] “</span><a href='https://medium.com/@gloom303/a-year-ago-i-released-an-ep-on-spotify-itunes-and-bandcamp-this-is-what-i-l-earned-872925797930'><span>A year ago I released an EP on Spotify, iTunes and Bandcamp. This is what I (L)Earned</span></a><span>.” - Bent Stamnes</span>
+<span>[ ] “</span><a href='https://techcrunch.com/2018/05/02/spotify-earnings/'><span>Spotify misses on revenue in first earnings report with 170M users</span></a><span>” - </span><em><span>TechCrunch</span></em>
+<span>[ ] </span><a href='https://investors.spotify.com/financials/press-release-details/2018/Spotify-Technology-SA-Announces-Financial-Results-for-First-Quarter-2018/default.aspx'><span>Spotify’s first quarterly earning report</span></a>
+<span>[ ] Chance the Rapper will always be a huge part of SoundCloud’s legacy, no matter what happens to them. They’re immortalized with him.</span>
+<span>[ ] “</span><a href='https://www.newyorker.com/magazine/2015/11/02/growth-spurt-pop-music-hua-hsu'><span>Car Seat Headrest and coming of age on Bandcamp</span></a><span>.” - </span><em><span>The New Yorker</span></em>
+<span>[ ] “</span><a href='http://bit.ly/extrproducers'><span>All of us have Bandcamp accounts, right</span></a><span>?” - </span><em><span>Drycast</span></em>
+<span>    “Bandcamp Sugar Daddy”</span>
+<span>[ ] </span><a href='https://yzome.bandcamp.com/album/yvette'><span>Better Know a College Radio Station</span></a><span> - </span><em><span>Bandcamp Daily</span></em>
+<span>[ ] “</span><a href='http://www.thefader.com/2017/04/03/bandcamp-artists-vs-soundcloud-artists-meme'><span>Soundcloud Artists Vs. Bandcamp Artists Is The Most Accurate Meme Of 2017</span></a><span>” - </span><em><span>The Fader</span></em>
+<span>[ ] “</span><a href='http://www.vulture.com/2017/07/chance-the-rapper-soundcloud.html'><span>Did Chance the Rapper Just Save SoundCloud?</span></a><span>” - </span><em><span>Vulture</span></em>
+<span>[ ] “</span><a href='https://daily.bandcamp.com/2017/12/27/2017-the-year-in-bandcamp-stats/#more-84832'><span>2017: The Year in Stats</span></a><span>” - </span><em><span>Bandcamp Daily</span></em>
+<span>[ ] “</span><a href='https://daily.bandcamp.com/2017/12/15/the-best-bandcamp-albums-of-2017-20-1/'><span>The Best Albums of 2017: #20 – 1</span></a><span>” - </span><em><span>Bandcamp Daily</span></em>
+<span>[ ] “</span><a href='https://pitchfork.com/reviews/albums/moses-sumney-aromanticism/'><span>Moses Sumney:</span></a><span> </span><a href='https://pitchfork.com/reviews/albums/moses-sumney-aromanticism/'><em><span>Aromanticism</span></em></a><span> </span><a href='https://pitchfork.com/reviews/albums/moses-sumney-aromanticism/'><span>Album Review</span></a><span>” - </span><em><span>Pitchfork</span></em>
+<span>    Where other than on SoundCloud is it actually worthwhile at all to follow the current #1 artist?</span>
+<span>[ ] &quot;</span><a href='https://www.nytimes.com/2017/08/25/arts/music/popcast-soundcloud-online-music-culture.html'><span>Is SoundCloud a Business or a Community?</span></a><span>” - </span><em><span>The New York Times Popcast</span></em>
+<span>[ ] “</span><a href='https://www.nytimes.com/2018/01/12/arts/music/popcast-streaming-spotify-soundcloud-bandcamp.html'><span>In Streaming, One Goliath Creates Many Davids</span></a><span>” - </span><em><span>The New York Times Popcast</span></em>
+<span>    “Bandcamp is not allowed”</span>
+<span>[ ] &quot;</span><a href='https://www.nytimes.com/2017/07/21/arts/music/popcast-streaming-spotify-soundcloud-tidal.html'><span>Streaming Is Taking Over Pop, but It’s Far From Flawless</span></a><span>” - </span><em><span>The New York Times Popcast</span></em>
+<span>[ ] “</span><a href='https://www.nytimes.com/2017/08/01/magazine/if-soundcloud-disappears-what-happens-to-its-music-culture.html'><span>If SoundCloud Disappears, What Happens to Its Music Culture?</span></a><span>” - </span><em><span>The New York Times</span></em>
+<span>[ ] “I’m thinking a lot about ways in which new culture, new cultural products, new cultural creators come to light in ways that sidestep these traditional means and don’t have to go through the traditionally very white, very male, very cis, very hetero hoops to prove worthiness.” - Jenna Wortham, co-host of </span><em><span>Still Processing</span></em><span> </span><a href='https://www.nytimes.com/2018/07/19/podcasts/still-processing-tin-house-inclusion-hannah-gadsby.html'><span>on</span></a><span> </span><a href='https://www.nytimes.com/2018/07/19/podcasts/still-processing-tin-house-inclusion-hannah-gadsby.html'><em><span>The New York Times</span></em></a><em><span>.</span></em>
+<span>[ ] “</span><a href='https://daily.bandcamp.com/2016/08/05/a-guide-to-black-experimental-music/'><span>A Guide to Black Experimental Music</span></a><span>,” </span><em><span>Bandcamp Daily</span></em>
+<span>[ ] Still doesn’t lend at all to losing oneself in a Wikipedia-like deep dive.</span>
+<span>[ ] Bandcamp has provided </span><strong><em><span>exactly</span></em></strong><span> what people have been suggesting in a music platform for decades, yet it’s serially overlooked. Is it by design?</span>
+<span>[ ] “</span><a href='https://www.npr.org/2017/08/04/541447336/bandcamp-holds-fundraiser-for-transgender-law-center'><span>Bandcamp Holds Fundraiser For Transgender Law Center</span></a><span>” - </span><em><span>NPR</span></em>
+<span>[ ] “</span><a href='https://daily.bandcamp.com/2017/01/31/bandcamp-human-rights/'><span>Today, Stand with Bandcamp in Support of Immigrants/Basic Human Values</span></a><span>&quot; - </span><em><span>Bandcamp Blog</span></em>
+<span>[ ] “</span><a href='https://daily.bandcamp.com/2018/09/25/bandcamp-voting-rights-fundraiser/'><span>This Friday, Stand with Bandcamp to Protect Voting Rights for All</span></a><span>” - </span><em><span>Bandcamp Blog</span></em>
+<span>[ ] Ethan Diamond himself buys </span><a href='https://bandcamp.com/ethan'><span>a shitload</span></a><span> of music on his platform. </span>
+<span>[ ] “</span><a href='https://thump.vice.com/en_us/article/9avqv7/bandcamp-150-million-dollars-artists'><span>Artists Made $150 Million Using Bandcamp Since 2008</span></a><span>&quot; - </span><em><span>Thump</span></em>
+<span>[ ] I can think of little more reductive, repugnant, reckless, or racist crusades as a model figure than indoctrinating your child with an inherent distaste for their own culture, and nothing more deeply alarming to hear from the mouth of someone born in the 21st century than shit like “Queen was better than any rapper will ever be,” or “real musicianship will die forever with Eric Clapton.” It’s unfair and unnatural: imagine if </span><em><span>your</span></em><span> high school classmates had immediately scrunched their nose at the living whole of rock &amp; roll, declaring that Scott Joplin was the last musician who’ll ever matter. Either wake the fuck up or die.</span>
+<span>[ ] “</span><a href='https://believermag.com/specular-maps/'><span>Specular Maps</span></a><span>” - </span><em><span>The Believer</span></em>
+<span>[ ] “</span><a href='https://theoutline.com/post/5815/the-national-bon-iver-streaming-service-people-interview'><span>The National and Bon Iver want to fix the streaming economy</span></a><span>” - </span><em><span>The Outline</span></em>
+<span>    “</span><strong><span>dumped</span></strong><span> the music on Bandcamp.”</span>
+<span>[ ] &quot;</span><a href='https://daily.bandcamp.com/2010/09/09/free-downloads-power-ups/'><span>Free Downloads &amp; Power-Ups</span></a><span>” - </span><em><span>Bandcamp Blog</span></em>
+<span>    “</span><a href='https://daily.bandcamp.com/2010/09/09/free-downloads-power-ups/#comment-2130'><span>Bandcamp is the best platform for indie music projects out there, period. Every comment rejecting the new policies as pure greed is childish</span></a><span>.”</span>
+<span>[ ] “</span><a href='https://www.bcg.com/en-us/publications/2018/ideas-emotions-innovation-riding-amazement-cycle.aspx'><span>Ideas, Emotions, and Innovation: Riding the Amazement Cycle</span></a><span>” - </span><em><span>BCG Henderson Institute</span></em>
+<span>[ ] “</span><a href='http://www.internethistorypodcast.com/2018/05/the-godfather-of-streaming-music-robert-reid/'><span>The Godfather of Streaming Music, Robert Reid</span></a><span>” - </span><em><span>The Internet History Podcast</span></em>
+<span>[ ] “</span><a href='http://www.internethistorypodcast.com/2015/07/justin-frankel-creator-of-winamp/'><span>Justin Frankel, Creator of WinAmp</span></a><span>” - </span><em><span>The Internet History Podcast</span></em></p><h2><a name="internet-radio" class="md-header-anchor"></a><span>Internet Radio</span></h2><p><span>[ ] “</span><a href='https://www.theverge.com/2018/8/8/17662056/pandora-podcast-genome-project-roger-lynch-podcast-interview-converge'><span>Pandora’s podcast genome project could launch by the end of the year</span></a><span>” - </span><em><span>The Verge</span></em>
+<span>[ ] “</span><a href='https://www.inc.com/magazine/20071001/pandoras-long-strange-trip_pagen_2.html'><span>Pandora&#39;s Long Strange Trip</span></a><span>” - </span><em><span>Inc.</span></em>
+<span>[ ] “</span><a href='https://www.forbes.com/sites/connieguglielmo/2013/11/13/pandora-media-needs-a-new-music-royalty-deal-will-it-be-the-same-one-apple-got/#a4324f267acb'><span>Pandora Plays Nice As Apple&#39;s iTunes Radio Spins Up</span></a><span>” - </span><em><span>Forbes</span></em>
+<span>[ ] “</span><a href='http://www.chriskern.net/history/voaFirstOnTheInternet.html'><span>The Voice of America: First on the Internet</span></a><span>”</span>
+<span>    “</span><a href='https://groups.google.com/forum/?hl=en#!original/rec.radio.shortwave/2pQ9KUYmLqo/wqhhXS2k-lAJ'><span>VOA Internet Audio Debuts Aug. 15</span></a><span>”</span>
+<span>[ ] “</span><a href='https://www.linuxjournal.com/article/6218'><span>Why Are So Many Internet Radio Stations Still on the Air?</span></a><span>” - </span><em><span>Linux Journal</span></em>
+<span>    “</span><a href='https://web.archive.org/web/20021026020216/http://www.wxyc.org/CARPresponse.html'><span>FIRST RADIO STATION ON THE INTERNET APPEALS FOR RELIEF FROM LEGISLATION THAT WOULD JEOPARDIZE ITS INTERNET SIMULCAST</span></a><span>”</span>
+<span>[ ] “</span><a href='http://www.virginialawreview.org/volumes/content/internet-radio-case-technology-neutral-royalty-standard'><span>Internet Radio: The Case for a Technology Neutral Royalty Standard</span></a><span>” - </span><em><span>Virginia Law Review</span></em>
+<span>[ ] “</span><a href='http://www.westword.com/2002-05-02/news/digital-dilemma/'><span>Digital Dilemma: Will new royalty fees kill Web radio?</span></a><span>“ - </span><em><span>Westword</span></em>
+<span>[ ] “</span><a href='https://www.theverge.com/2016/1/15/10777790/itunes-radio-apple-music-january-28'><span>Apple will start charging for iTunes Radio on January 28th</span></a><span>” - </span><em><span>The Verge</span></em>
+<span>[ ] “</span><a href='https://patents.google.com/patent/US20020059592'><span>Method and system for implementing an internet radio device for receiving and /or transmitting media information</span></a><span>” - Patent (Google Patents)</span>
+<span>[ ] “</span><a href='https://www.thestar.com/business/2007/04/09/web_radio_may_stream_north_to_canada.html\'><span>Web radio may stream north to Canada</span></a><span>” - </span><em><span>The Star</span></em>
+<span>[ ] </span><a href='https://web.archive.org/web/20100330102643/http://directory.google.com/Top/Arts/Music/Sound_Files/MP3/Streaming/Stations'><span>Google Internet Radio Directory - March 30th, 2010</span></a><span> - </span><em><span>Archive</span></em>
+<span>[ ] “</span><a href='http://community.seattletimes.nwsource.com/archive/?date=19990627&amp;slug=2968794'><span>Internet Radio -- Computers Help You Hear What Might Be Broadcasts</span></a><span>” - </span><em><span>The Seattle Times</span></em>
+<span>[ ] “</span><a href='http://Does “Good” Music Prevail?'><span>Does ‘Good’ Music Prevail</span></a><span>?” - </span><em><span>The Future of What</span></em>
+<span>[ ] “</span><a href='http://killrockstars.com/thefutureofwhat/episode-61-the-death-of-the-download/'><span>The Death of the Download</span></a><span>” - </span><em><span>The Future of What</span></em>
+<span>[ ] “</span><a href='http://killrockstars.com/thefutureofwhat/episode-18-the-merits-of-bandcamp/'><span>The Merits of Bandcamp</span></a><span>” - </span><em><span>The Future of What</span></em>
+<span>[ ] While I cannot successfully explain why I still use cassettes to my mom, they make more sense than ya might think. </span></p><h2><a name="the-curation" class="md-header-anchor"></a><span>The Curation</span></h2><p><span>[ ] “</span><a href='https://soundcloud.com/user-27545025-81127248/in-conversation-with-bandcamps'><span>In Conversation with Bandcamp&#39;s Andrew Jervis</span></a><span>” - </span><em><span>Face the Music</span></em>
+<span>[ ] “</span><a href='https://tonedeaf.com.au/curating-bandcamp-andrew-jervis/'><span>What’s It Like Trying To Curate The Whole Of Bandcamp</span></a><span>?” - </span><em><span>Tone Deaf</span></em>
+<span>    “Bandcamp has always grown extremely organically. There’s never actually been any advertising that we’ve done; there’s never any advertising on the site, and there never will be. We haven’t really tooted our horn very hard.”</span>
+<span>[ ] &quot;</span><a href='https://thebaffler.com/salvos/long-distance-rocker-miller'><span>The Loneliness of the Long Distance Rocker</span></a><span>” - </span><em><span>The Baffler</span></em>
+<span>    ”You’ve still got the execs in the tower in Rockefeller Center—only now all the lower floors that used to house the junior execs and the young A&amp;R kids are crammed with barbed wire and land mines. The Artists &amp; Repertoire department has been replaced by a bot that alerts the label chief when an artist reaches a predetermined number of Twitter followers or Facebook likes.”</span></p><h2><a name="the-future" class="md-header-anchor"></a><span>The Future</span></h2><p><span>[ ] </span><a href='https://bandcamp.com/?show=300'><span>Bandcamp Weekly #300</span></a><span> includes </span><a href='https://blondie-numero.bandcamp.com'><span>Blondie</span></a><span>.</span>
+<span>[ ] </span><a href='https://wilwheaton.bandcamp.com/'><span>Wil Wheaton’s Audiobooks</span></a><span>…?</span>
+<span>[ ] The benefit of continued neglect by the industry: Bandcamp won’t be held responsible for the development of complex tools to </span><a href='https://www.reddit.com/r/WeAreTheMusicMakers/comments/17514r/question_regarding_bandcampcoms_policy_on/'><span>identify copyrighted material on their platform</span></a><span>.</span>
+<span>[ ] “</span><a href='https://www.musictimes.com/articles/35344/20150412/soundcloud-partnering-zefr-youtube-copyright-enforcement-manager-warner-music.htm'><span>SoundCloud Partnering With Zefr, YouTube&#39;s Copyright Enforcement Manager</span></a><span>” - </span><em><span>Music Times</span></em>
+<span>[ ] “</span><a href='https://noisey.vice.com/en_us/article/3kvzxj/inside-the-underground-beat-market-shaping-soundcloud-rap-v24n8\'><span>Pay-Per-Beat: Inside the Underground Market Shaping Soundcloud Rap</span></a><span>” - </span><em><span>Noisey</span></em>
+<span>[ ] </span><a href='https://www.cnbc.com/video/2015/06/30/best-streaming-music-service-ive-ever-tried-mossberg.html'><span>Apple Music is the “best streaming service” Walt Mossberg has ever tried</span></a><span>. - </span><em><span>CNBC</span></em>
+<span>[ ] “</span><a href='https://www.theverge.com/2018/10/18/17994924/soundcloud-streaming-dj-mix-download-traktor-serato'><span>DJs will soon be able to mix songs streaming from SoundCloud</span></a><span>” - </span><em><span>The Verge</span></em>
+<span>[ ] “</span><a href='https://www.residentadvisor.net/podcast-episode.aspx?exchange=429'><span>Branding in Dance Music</span></a><span>” - </span><em><span>RA Exchange</span></em></p><p><span>There </span><em><span>are</span></em><span> benefits to Bandcamp’s continued chastisement from the industry. We know that streaming services sometimes have to spend millions of dollars developing software to identify and remove copyrighted content from their platforms after they’ve grown sufficiently.</span></p><p><a href='https://djyungsavage.com/album/damn-chopped-x-screwed'><em><span>good boy, d.E.E.p Web</span></em></a><span> - Gibberish</span></p><p>&nbsp;</p><p><span>[ ] Bandcamp is #87 on “</span><a href='https://gizmodo.com/100-websites-that-shaped-the-internet-as-we-know-it-1829634771'><span>100 Websites That Shaped the Internet as We Know It</span></a><span>” - </span><em><span>Gizmodo</span></em>
+<span>        “The internet’s Big Promise has always centered on its ability to give power back to the little guy. Bandcamp is one place that </span><a href='https://gizmodo.com/meet-the-prodigy-who-made-11-bandcamp-albums-that-event-1739708308'><span>actually made good</span></a><span>. By giving artists the ability to not only publish their music but to sell it straight to fans, Bandcamp has allowed independent musicians to earn </span><a href='https://bandcamp.com/'><span>more than $300 million</span></a><span>. In the 10 years it’s been active, the site has also served as a beginning point for weird internet subcultures and microgenres, including </span><a href='https://bandcamp.com/tag/vaporwave'><span>vaporwave</span></a><span>, </span><a href='https://bandcamp.com/tag/computergaze'><span>computergaze</span></a><span>, and </span><a href='https://bandcamp.com/tag/futurefunk'><span>future funk</span></a><span>. Bandcamp is meant for artists, but it’s just as vital for music fans.”</span></p><p>&nbsp;</p></div>
+</body>
+</html>
